@@ -51,8 +51,8 @@ export default {
         },
         {
           icon: "mdi-view-module",
-          name: "Category",
-          path: "/category"
+          name: "Categories",
+          path: "/categories"
         },
         {
           icon: "mdi-food",

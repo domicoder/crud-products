@@ -4,9 +4,8 @@
     toolbar
     v-content().pa-0
       v-container(fluid)
-        v-layout().justify-center
-          v-flex(shrink)
-            router-view
+        v-layout(justify-center, align-center)
+          router-view
     v-footer(app, color="blue" ).justify-center.pa-3
       div().white--text &copy; CRUD Products - {{ getActualYear }}
 </template>

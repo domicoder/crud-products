@@ -17,28 +17,38 @@ const routes = [
     children: [
       {
         path: "/",
-        name: "homeoption",
         component: resolve => {
           require(["../views/ui/home/HomeOptions"], resolve);
         }
       },
       {
-        path: "/category",
-        name: "category",
+        path: "/categories",
         component: resolve => {
           require(["../views/ui/category/Categories"], resolve);
         }
       },
       {
+        path: "/category/:id",
+        component: resolve => {
+          require(["../views/ui/category/Category"], resolve);
+        },
+        props: true
+      },
+      {
         path: "/products",
-        name: "products",
         component: resolve => {
           require(["../views/ui/products/Products"], resolve);
         }
       },
       {
+        path: "/product/:id",
+        component: resolve => {
+          require(["../views/ui/products/Product"], resolve);
+        },
+        props: true
+      },
+      {
         path: "/about",
-        name: "about",
         component: resolve => {
           require(["../views/ui/about/About"], resolve);
         }
